@@ -1,5 +1,5 @@
 # CoT-llama2
-![KO-platypus](./KO_platypus.png)  
+![CoT-llama2](./CoT-llama.png)  
 Chain-of-thought 방식을 활용하여 llama2를 fine-tuning  
   
 # Introduction
