@@ -1,6 +1,9 @@
-# CoT-llama2
+# CoT-llama2 (Not Update;)
 ![CoT-llama2](./CoT-llama.png)  
-Chain-of-thought 방식을 활용하여 llama2를 fine-tuning  
+**Chain-of-thought 방식을 활용하여 llama2를 fine-tuning**   
+
+**CoT-llama-2k-7b:** [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/kyujinpy/CoT-llama-2k-7b)   
+**KoCoT-2000:** [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/datasets/kyujinpy/KoCoT_2000)   
   
 # Introduction
 
@@ -34,7 +37,8 @@ And, implement below code.
 | [Polyglot-ko-12.8b](https://huggingface.co/EleutherAI/polyglot-ko-12.8b) | 0.7937 | 0.8108 | 0.8037 | 0.8369 |
 | [Llama-2-Ko-7b 20B](https://huggingface.co/beomi/llama-2-ko-7b) | 0.7388 | 0.7626 | 0.7808 | 0.7979 |
 | [Llama-2-Ko-7b 40B](https://huggingface.co/beomi/llama-2-ko-7b) | 0.7436 | 0.7927 | 0.8037 | 0.8259 |  
-| **KO-platypus2-7B-EX(ours)** | 0.7509 | 0.7899 | 0.8029 | 0.8290 |   
+| [KO-platypus2-7B-EX(ours)](https://huggingface.co/kyujinpy/KO-Platypus2-7B-ex) | 0.7509 | 0.7899 | 0.8029 | 0.8290 |  
+| **CoT-llama-2(ours)** | 0.7528 | NaN | NaN | NaN |  
   
 ### HellaSwag (F1)
 | Model | 0-shot | 5-shot | 10-shot | 50-shot |
@@ -45,7 +49,8 @@ And, implement below code.
 | [Polyglot-ko-12.8b](https://huggingface.co/EleutherAI/polyglot-ko-12.8b) | 0.5954 | 0.6306 | 0.6098 | 0.6118 |
 | [Llama-2-Ko-7b 20B](https://huggingface.co/beomi/llama-2-ko-7b) | 0.4518 | 0.4668 | 0.4726 | 0.4828 |
 | [Llama-2-Ko-7b 40B](https://huggingface.co/beomi/llama-2-ko-7b) | 0.4562 | 0.4657 | 0.4698 | 0.4774 |   
-| **KO-platypus2-7B-EX(ours)** | 0.4571 | 0.4461 | 0.4371 | 0.4525 |   
+| [KO-platypus2-7B-EX(ours)](https://huggingface.co/kyujinpy/KO-Platypus2-7B-ex) | 0.4571 | 0.4461 | 0.4371 | 0.4525 |  
+| **CoT-llama-2(ours)** | 0.4543 | NaN | NaN | NaN | 
   
 ### BoolQ (F1)
 | Model | 0-shot | 5-shot | 10-shot | 50-shot |
@@ -56,7 +61,8 @@ And, implement below code.
 | [Polyglot-ko-12.8b](https://huggingface.co/EleutherAI/polyglot-ko-12.8b) | 0.4818 | 0.6041 | 0.6289 | 0.6448 |
 | [Llama-2-Ko-7b 20B](https://huggingface.co/beomi/llama-2-ko-7b) | 0.3607 | 0.6797 | 0.6801 | 0.6622 |
 | [Llama-2-Ko-7b 40B](https://huggingface.co/beomi/llama-2-ko-7b) | 0.5786 | 0.6977 | 0.7084 | 0.7144 |  
-| **KO-platypus2-7B-EX(ours)** | 0.6028 | 0.6979 | 0.7016 | 0.6988 |  
+| [KO-platypus2-7B-EX(ours)](https://huggingface.co/kyujinpy/KO-Platypus2-7B-ex) | 0.6028 | 0.6979 | 0.7016 | 0.6988 |  
+| **CoT-llama-2(ours)** | 0.5852 | NaN | NaN | NaN | 
   
 ### SentiNeg (F1)
 | Model | 0-shot | 5-shot | 10-shot | 50-shot |
@@ -67,16 +73,14 @@ And, implement below code.
 | [Polyglot-ko-12.8b](https://huggingface.co/EleutherAI/polyglot-ko-12.8b) | 0.9117 | 0.9015 | 0.9345 | 0.9723 |
 | [Llama-2-Ko-7b 20B](https://huggingface.co/beomi/llama-2-ko-7b) | 0.4855 | 0.8295 | 0.8711 | 0.8513 |
 | [Llama-2-Ko-7b 40B](https://huggingface.co/beomi/llama-2-ko-7b) | 0.4594 | 0.7611 | 0.7276 | 0.9370 |  
-| **KO-platypus2-7B-EX(ours)** | 0.5821 | 0.7653 | 0.7991 | 0.8643 |  
+| [KO-platypus2-7B-EX(ours)](https://huggingface.co/kyujinpy/KO-Platypus2-7B-ex) | 0.5821 | 0.7653 | 0.7991 | 0.8643 |  
+| **CoT-llama-2(ours)** | 0.5045 | NaN | NaN | NaN | 
    
-# References
-[Kopen-Platypus🥮](https://huggingface.co/datasets/kyujinpy/KOpen-platypus)   
-[KO-Platypus2-7B-ex🥮](https://huggingface.co/kyujinpy/KO-Platypus2-7B-ex)  
-[KO-Platypus2-13B; Not good](https://huggingface.co/kyujinpy/KO-Platypus2-13B)  
-[Platypus](https://github.com/arielnlee/Platypus)  
-[llama-2](https://huggingface.co/meta-llama/Llama-2-7b)  
-[llama-2-ko](https://huggingface.co/beomi/llama-2-ko-7b)  
-[ko-lm-evaluation-harness](https://github.com/Beomi/ko-lm-evaluation-harness)   
+# References  
+[CoT-llama](https://huggingface.co/kyujinpy/CoT-llama-2k-7b)  
+[KoCoT-2000](https://huggingface.co/datasets/kyujinpy/KoCoT_2000)  
+[llama-2-ko](https://huggingface.co/beomi/llama-2-ko-7b)   
+[ko-lm-evaluation-harness](https://github.com/Beomi/ko-lm-evaluation-harness)    
   
 # TODO
 - [ ] Make CoT-llama2-7b 
