@@ -18,7 +18,8 @@
 
 # Model Description  
 ### Hyperparameters (as LIMA)  
-| Hyperparameters | Value |
+| Hyperparameters | Value |  
+| --- | --- |  
 | batch_size | `64` |   
 | micro_batch_size | `1` |  
 | Epochs | `15` |  
