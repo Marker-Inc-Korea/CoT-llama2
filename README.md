@@ -7,7 +7,7 @@
   
 # Introduction
 - LLM 관련 프로젝트를 진행하면서, "LLM의 근본적인 성능의 문제는 파라미터보다 데이터셋의 품질에 더 의미가 있지 않을까?"라는 생각을 하게 되었습니다.
-- [Kaist-CoT](https://huggingface.co/datasets/kaist-ai/CoT-Collection)와 [LIMA](https://arxiv.org/abs/2305.11206)를 통해서 데이터의 품질이 중요하다는 사실을 깨닫게 되었습니다.
+- [Kaist-CoT](https://huggingface.co/datasets/kaist-ai/CoT-Collection)와 [LIMA](https://arxiv.org/abs/2305.11206)를 통해서 데이터의 개수보다 품질이 모델의 성능에 어느정도 기여한다는 사실을 깨닫게 되었습니다.
 
 - 이것을 동기부여로 삼아서, LIMA에서 1000~2000개의 데이터셋을 활용한 것을 기반으로 Kaist-CoT 데이터셋 중 2000개를 추출하여 학습하기로 하였습니다!🙂🙂
 - DeepL를 활용하여 번역하였고, 그 이후에 따로 직접적인 전처리를 하진 않고 바로 훈련에 도입했습니다.
