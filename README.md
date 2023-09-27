@@ -13,11 +13,15 @@
 - DeepL를 활용하여 번역하였고, 그 이후에 따로 직접적인 전처리를 하진 않고 바로 훈련에 도입했습니다.
 - 이렇게 만들어진 **🥮KoCoT-2000🥮** 데이터셋을 활용하여 beomi님의 **llama-2-ko** 모델을 fine-tuning 하였습니다.
   
-- 결과적으로 **CoT-llama-2k-7b** 모델을 만들게 되었고✌, 성능평가를 위해 Polyglot-Ko와 llama-2-ko 모델과 비교를 진행했습니다.🙂🙃
-- 본 연구는 (주)마커와 (주)미디어그룹사람과숲의 오픈소스 LLM 연구 컨소시엄에서 진행되었습니다.
+- 결과적으로 **CoT-llama-2k-7b** 모델을 만들게 되었고✌, 성능평가를 위해 Polyglot-Ko와 llama-2-ko 모델과 비교를 진행했습니다.🙂🙃  
+- 본 연구는 (주)마커와 (주)미디어그룹사람과숲의 오픈소스 LLM 연구 컨소시엄에서 진행되었습니다.  
 
 # Model Description  
-### Hyperparameters (as LIMA)  
+### CoT-llama2-2k-7b
+- **llama-2-ko-7B를 fine-tuning한 모델**
+- **🥮CoT-llama2-2k-7b🥮** 모델은 LIMA의 방법론을 이용하여 Kaist에서 제작한 데이터셋을 기반으로 Chain-Of-Thought를 잘 수행할 수 있도록 튜닝한 모델입니다✌✌  
+
+### Training Hyperparameters (as LIMA)  
 | Hyperparameters | Value |  
 | --- | --- |  
 | batch_size | `64` |   
