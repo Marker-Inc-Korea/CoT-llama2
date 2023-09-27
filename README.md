@@ -18,14 +18,14 @@
 
 # Model Description  
 ### Hyperparameters (as LIMA)  
-| Hyperparameters | Value |  
+| Hyperparameters | Value |
 | batch_size | `64` |   
 | micro_batch_size | `1` |  
-| Epochs | 15 |  
-| learning_rate | 1e-5 |  
-| cutoff_len | 2048 |  
-| lr_scheduler | linear |  
-| base_model | beomi/llama-2-ko-7b |  
+| Epochs | `15` |  
+| learning_rate | `1e-5` |  
+| cutoff_len | `2048` |  
+| lr_scheduler | `linear` |  
+| base_model | `beomi/llama-2-ko-7b` |  
 
 # Quick start
 Colab Code: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lRDSnHHVIzRW7RYRV3rha2QL2aMETRp7?usp=sharing)
