@@ -1,4 +1,4 @@
-# CoT-llama2 (Not Update;)
+# CoT-llama2
 ![CoT-llama2](./CoT-llama.png)  
 **Chain-of-thought 방식을 활용하여 llama2를 fine-tuning**   
 
